@@ -39,3 +39,7 @@ git submodule add https://github.com/EliHunter173/text-generator.git
 ## Authors
 
 * Eli W. Hunter
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
