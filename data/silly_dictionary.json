@@ -39,10 +39,6 @@
                 "plural":   { "future": "will flormp" , "present": "flormp"  , "past": "flormped" }
             },
             {
-                "singular": { "future": "will fuck" , "present": "fucks" , "past": "fucked" },
-                "plural":   { "future": "will fuck" , "present": "fuck"  , "past": "fucked" }
-            },
-            {
                 "singular": { "future": "will punch" , "present": "punches" , "past": "punched" },
                 "plural":   { "future": "will punch" , "present": "punch"   , "past": "punched" }
             }
@@ -51,10 +47,6 @@
             {
                 "singular": { "future": "will fight" , "present": "fights" , "past": "fought" },
                 "plural":   { "future": "will fight" , "present": "fight"  , "past": "fought" }
-            },
-            {
-                "singular": { "future": "will fuck" , "present": "fucks" , "past": "fucked" },
-                "plural":   { "future": "will fuck" , "present": "fuck"  , "past": "fucked" }
             },
             {
                 "singular" : { "future" : "will run", "present" : "runs", "past" : "ran" },
