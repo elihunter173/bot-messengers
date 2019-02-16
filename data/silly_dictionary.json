@@ -1,0 +1,83 @@
+{
+    "nouns": [
+        { "singular": "bingus"      , "plural": "bingi" }        ,
+        { "singular": "chonk"       , "plural": "chonks" }       ,
+        { "singular": "chungus"     , "plural": "chunguses" }    ,
+        { "singular": "dollop"      , "plural": "dollops" }      ,
+        { "singular": "flangus"     , "plural": "flanguses" }    ,
+        { "singular": "flonk"       , "plural": "flonks" }       ,
+        { "singular": "floop"       , "plural": "floops" }       ,
+        { "singular": "gork"        , "plural": "gorks" }        ,
+        { "singular": "gromp"       , "plural": "gromps" }       ,
+        { "singular": "gungler"     , "plural": "gunglers" }     ,
+        { "singular": "haunch"      , "plural": "haunches" }     ,
+        { "singular": "hust"        , "plural": "husts" }        ,
+        { "singular": "lomp"        , "plural": "lompes" }       ,
+        { "singular": "poink"       , "plural": "poinks" }       ,
+        { "singular": "porp"        , "plural": "porps" }        ,
+        { "singular": "slurmp"      , "plural": "slurmps" }       ,
+        { "singular": "yttrium"     , "plural": "yttrium" }      ,
+        { "singular": "zaggler"     , "plural": "zagglers" }     ,
+        { "singular": "zingmeister" , "plural": "zingmeisters" }
+    ],
+    "adjectives": [
+        "burly",
+        "diddly",
+        "embarrassed",
+        "sheepish",
+        "tiddly",
+        "zaggly"
+    ],
+    "verbs": {
+        "transitive": [
+            {
+                "singular": { "future": "will fight" , "present": "fights" , "past": "fought" },
+                "plural":   { "future": "will fight" , "present": "fight"  , "past": "fought" }
+            },
+            {
+                "singular": { "future": "will flormp" , "present": "flormps" , "past": "flormped" },
+                "plural":   { "future": "will flormp" , "present": "flormp"  , "past": "flormped" }
+            },
+            {
+                "singular": { "future": "will fuck" , "present": "fucks" , "past": "fucked" },
+                "plural":   { "future": "will fuck" , "present": "fuck"  , "past": "fucked" }
+            },
+            {
+                "singular": { "future": "will punch" , "present": "punches" , "past": "punched" },
+                "plural":   { "future": "will punch" , "present": "punch"   , "past": "punched" }
+            }
+        ],
+        "intransitive": [
+            {
+                "singular": { "future": "will fight" , "present": "fights" , "past": "fought" },
+                "plural":   { "future": "will fight" , "present": "fight"  , "past": "fought" }
+            },
+            {
+                "singular": { "future": "will fuck" , "present": "fucks" , "past": "fucked" },
+                "plural":   { "future": "will fuck" , "present": "fuck"  , "past": "fucked" }
+            },
+            {
+                "singular" : { "future" : "will run", "present" : "runs", "past" : "ran" },
+                "plural"   : { "future" : "will run", "present" : "run",  "past" : "ran" }
+            }
+        ]
+    },
+    "articles": [
+        {
+            "singular" : { "normal" : "a", "vowel" : "an" },
+            "plural"   : { "normal" : "", "vowel"  : "" }
+        },
+        {
+            "singular" : { "normal" : "the", "vowel" : "the" },
+            "plural"   : { "normal" : "the", "vowel" : "the" }
+        },
+        {
+            "singular" : { "normal" : "this", "vowel"  : "this" },
+            "plural"   : { "normal" : "these", "vowel" : "these" }
+        },
+        {
+            "singular" : { "normal" : "that", "vowel"  : "that" },
+            "plural"   : { "normal" : "those", "vowel" : "those" }
+        }
+    ]
+}
