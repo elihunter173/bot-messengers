@@ -32,7 +32,7 @@ git submodule add https://github.com/EliHunter173/text-generator.git
 # Add this module to your Python project (or other) as you would any other submodule
 ```
 
-### Creating Custom Dictionaries
+## Creating Custom Dictionaries
 
 ***TO BE CREATED***
 
