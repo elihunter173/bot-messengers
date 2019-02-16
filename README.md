@@ -8,4 +8,25 @@ messages with random or meaningful content.
 
 ## Included Bots
 
-* **Tweeter:** A bot that sends messages for [@EliHunter173](https://twitter.com/EliHunter173).
+* **TweeterBot:** A bot that sends messages for [@EliHunter173](https://twitter.com/EliHunter173).
+
+## Getting Started
+
+The specific setup required depends on the bot you want to use. However, generally the setup
+consists of setting up the secrets for your desired platform and then running the bot.
+
+### TweeterBot
+
+1. Copy `twitter_secrets_example.py` to `twitter_secrets.py`
+2. Edit `twitter_secrets.py` to contain your `consumer_key`, `consumer_secret`, `access_token_key`,
+   and `access_token_secret`.
+3. Run `tweeter.py`. Either pipe in the content you want TweeterBot to tweet at the end of a
+   pipeline or specify any number of files for TweeterBot to tweet the contents of.
+
+## Authors
+
+* Eli W. Hunter
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
