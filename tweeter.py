@@ -15,6 +15,8 @@ from TwitterAPI import TwitterAPI
 import twitter_secrets
 
 
+SIGNATURE = ' - TweeterBot'
+
 # Set up Twitter API with the required contents
 api = TwitterAPI(twitter_secrets.consumer_key,
                  twitter_secrets.consumer_secret,
@@ -32,6 +34,6 @@ if __name__ == '__main__':
     tweet_text = ''
     for line in fileinput.input():
         tweet_text += line
-    tweet_text += ' -- TweeterBot'
+    tweet_text += SIGNATURE
 
     tweet(tweet_text)
