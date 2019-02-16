@@ -32,5 +32,6 @@ if __name__ == '__main__':
     tweet_text = ''
     for line in fileinput.input():
         tweet_text += line
+    tweet_text += ' -- TweeterBot'
 
     tweet(tweet_text)

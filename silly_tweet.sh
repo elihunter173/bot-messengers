@@ -19,5 +19,5 @@ text_gen_path="${HOME}/src/github/text-generator"
 source ${parent_path}/virtualenv/bin/activate
 
 # Run the program
-echo $(${text_gen_path}/text_generator.py -s ${text_gen_path}/data/silly_dictionary.json) '-- TweeterBot' \
+${text_gen_path}/text_generator.py -s ${text_gen_path}/data/silly_dictionary.json \
     | ${parent_path}/tweeter.py
