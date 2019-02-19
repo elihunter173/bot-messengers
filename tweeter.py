@@ -15,7 +15,7 @@ from TwitterAPI import TwitterAPI
 import twitter_secrets
 
 
-SIGNATURE = ' - TweeterBot'
+SIGNATURE = '- TweeterBot'
 
 # Set up Twitter API with the required contents
 api = TwitterAPI(twitter_secrets.consumer_key,
