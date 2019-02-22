@@ -31,9 +31,6 @@ def tweet(text):
 
 
 if __name__ == '__main__':
-    tweet_text = ''
     for line in fileinput.input():
-        tweet_text += line
-    tweet_text += SIGNATURE
-
-    tweet(tweet_text)
+        tweet_text = line.strip() + ' ' + SIGNATURE
+        tweet(tweet_text)
