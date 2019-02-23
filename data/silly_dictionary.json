@@ -1,58 +1,218 @@
 {
     "nouns": [
-        { "singular": "bingus"      , "plural": "bingi" }        ,
-        { "singular": "chonk"       , "plural": "chonks" }       ,
-        { "singular": "chungus"     , "plural": "chunguses" }    ,
-        { "singular": "dollop"      , "plural": "dollops" }      ,
-        { "singular": "flangus"     , "plural": "flanguses" }    ,
-        { "singular": "flonk"       , "plural": "flonks" }       ,
-        { "singular": "floop"       , "plural": "floops" }       ,
-        { "singular": "gork"        , "plural": "gorks" }        ,
-        { "singular": "gromp"       , "plural": "gromps" }       ,
-        { "singular": "gungler"     , "plural": "gunglers" }     ,
-        { "singular": "haunch"      , "plural": "haunches" }     ,
-        { "singular": "hust"        , "plural": "husts" }        ,
-        { "singular": "lomp"        , "plural": "lompes" }       ,
-        { "singular": "poink"       , "plural": "poinks" }       ,
-        { "singular": "porp"        , "plural": "porps" }        ,
-        { "singular": "slurmp"      , "plural": "slurmps" }       ,
-        { "singular": "yttrium"     , "plural": "yttrium" }      ,
-        { "singular": "zaggler"     , "plural": "zagglers" }     ,
-        { "singular": "zingmeister" , "plural": "zingmeisters" }
+        { "singular": "American"           , "plural": "Americans" },
+        { "singular": "bird"               , "plural": "birds" },
+        { "singular": "birb"               , "plural": "birbs" },
+        { "singular": "bonglebatch"        , "plural": "bonglebatches" },
+        { "singular": "brethren"           , "plural": "brethren" },
+        { "singular": "chauvinist"         , "plural": "chauvinists" },
+        { "singular": "Constitution"       , "plural": "Constitutions" },
+        { "singular": "chonk"              , "plural": "chonks" },
+        { "singular": "chungus"            , "plural": "chunguses" },
+        { "singular": "drug"               , "plural": "drugs" },
+        { "singular": "Englishman"         , "plural": "Englishmen" },
+        { "singular": "failure"            , "plural": "failures" },
+        { "singular": "Frenchman"          , "plural": "Frenchmen" },
+        { "singular": "failure"            , "plural": "failures" },
+        { "singular": "folkman"            , "plural": "folks" },
+        { "singular": "floop"              , "plural": "floops" },
+        { "singular": "Geneva Convention"  , "plural": "Geneva Conventions" },
+        { "singular": "German"             , "plural": "Germans" },
+        { "singular": "grandma"            , "plural": "grandmas" },
+        { "singular": "grandpa"            , "plural": "grandpas" },
+        { "singular": "karate master"      , "plural": "karate masters" },
+        { "singular": "kitty"              , "plural": "kitties" },
+        { "singular": "legend"             , "plural": "legends" },
+        { "singular": "man"                , "plural": "men" },
+        { "singular": "place of buisiness" , "plural": "place of buisiness" },
+        { "singular": "puppy"              , "plural": "puppies" },
+        { "singular": "psychic"            , "plural": "psychics" },
+        { "singular": "trap"               , "plural": "traps" },
+        { "singular": "woman"              , "plural": "women" }
     ],
     "adjectives": [
+        "American",
+        "Amish",
+        "beautiful",
         "burly",
-        "diddly",
+        "confrontational",
+        "chauvinistic",
+        "domesticated",
         "embarrassed",
+        "English",
+        "French",
+        "frisky",
+        "German",
+        "legendary",
+        "mean",
+        "nice",
+        "non-confrontational",
+        "psychic",
+        "rich",
         "sheepish",
-        "tiddly",
-        "zaggly"
+        "sticky",
+        "stupid",
+        "useless",
+        "wild"
     ],
     "verbs": {
         "transitive": [
             {
-                "singular": { "future": "will fight" , "present": "fights" , "past": "fought" },
-                "plural":   { "future": "will fight" , "present": "fight"  , "past": "fought" }
+                "participle": { "present": "accepting", "past": "accepted" },
+                "simple": { "singular": "accepts", "plural": "accept", "past": "accepted" }
             },
             {
-                "singular": { "future": "will flormp" , "present": "flormps" , "past": "flormped" },
-                "plural":   { "future": "will flormp" , "present": "flormp"  , "past": "flormped" }
+                "participle": { "present": "arguing with", "past": "argued with" },
+                "simple": { "singular": "argues with", "plural": "argue with", "past": "argued with" }
             },
             {
-                "singular": { "future": "will punch" , "present": "punches" , "past": "punched" },
-                "plural":   { "future": "will punch" , "present": "punch"   , "past": "punched" }
+                "participle": { "present": "applauding", "past": "applauded" },
+                "simple": { "singular": "applauds", "plural": "applaud", "past": "applauded" }
+            },
+            {
+                "participle": { "present": "buttering up", "past": "buttered up" },
+                "simple": { "singular": "butters up", "plural": "butter up", "past": "buttered up" }
+            },
+            {
+                "participle": { "present": "cajoling", "past": "cajoled" },
+                "simple": { "singular": "cajoles", "plural": "cajole", "past": "cajoled" }
+            },
+            {
+                "participle": { "present": "enjoying", "past": "enjoyed" },
+                "simple": { "singular": "enjoyed", "plural": "enjoy", "past": "enjoyed" }
+            },
+            {
+                "participle": { "present": "fighting", "past": "fought" },
+                "simple": { "singular": "fights", "plural": "fight", "past": "fought" }
+            },
+            {
+                "participle": { "present": "hating", "past": "hated" },
+                "simple": { "singular": "hates", "plural": "hate", "past": "hated" }
+            },
+            {
+                "participle": { "present": "injecting", "past": "injected" },
+                "simple": { "singular": "injects", "plural": "inject", "past": "injected" }
+            },
+            {
+                "participle": { "present": "laughing at", "past": "laughed at" },
+                "simple": { "singular": "laughs at", "plural": "laugh at", "past": "laughed at" }
+            },
+            {
+                "participle": { "present": "loving", "past": "loved" },
+                "simple": { "singular": "loves", "plural": "love", "past": "loved" }
+            },
+            {
+                "participle": { "present": "mimicking", "past": "mimicked" },
+                "simple": { "singular": "mimics", "plural": "mimic", "past": "mimicked" }
+            },
+            {
+                "participle": { "present": "refusing", "past": "refused" },
+                "simple": { "singular": "refuses", "plural": "refuse", "past": "refused" }
+            },
+            {
+                "participle": { "present": "rejecting", "past": "rejected" },
+                "simple": { "singular": "rejects", "plural": "reject", "past": "rejected" }
+            },
+            {
+                "participle": { "present": "slurping", "past": "slurped" },
+                "simple": { "singular": "slurps", "plural": "slurp", "past": "slurped" }
+            },
+            {
+                "participle": { "present": "surrender to", "past": "surrendered to" },
+                "simple": { "singular": "surrender to", "plural": "surrender to", "past": "surrendered to" }
+            },
+            {
+                "participle": { "present": "sweet-talking", "past": "sweet-talked" },
+                "simple": { "singular": "sweet-talks", "plural": "sweet-talk", "past": "sweet-talked" }
+            },
+            {
+                "participle": { "present": "taunting", "past": "taunted" },
+                "simple": { "singular": "taunts", "plural": "taunt", "past": "taunted" }
+            },
+            {
+                "participle": { "present": "yelling at", "past": "yelled at" },
+                "simple": { "singular": "yells at", "plural": "yell at", "past": "yelled at" }
             }
         ],
         "intransitive": [
             {
-                "singular": { "future": "will fight" , "present": "fights" , "past": "fought" },
-                "plural":   { "future": "will fight" , "present": "fight"  , "past": "fought" }
+                "participle": { "present": "arguing", "past": "argued" },
+                "simple": { "singular": "argues", "plural": "argue", "past": "argued" }
             },
             {
-                "singular" : { "future" : "will run", "present" : "runs", "past" : "ran" },
-                "plural"   : { "future" : "will run", "present" : "run",  "past" : "ran" }
+                "participle": { "present": "crying", "past": "cried" },
+                "simple": { "singular": "cries", "plural": "cry", "past": "cried" }
+            },
+            {
+                "participle": { "present": "echoing", "past": "echoed" },
+                "simple": { "singular": "echoes", "plural": "echo", "past": "echoed" }
+            },
+            {
+                "participle": { "present": "diceiving", "past": "diceived" },
+                "simple": { "singular": "diceives", "plural": "deceive", "past": "diceived" }
+            },
+            {
+                "participle": { "present": "gesticulating", "past": "gesticulated" },
+                "simple": { "singular": "gesticulates", "plural": "gesticulate", "past": "gesticulated" }
+            },
+            {
+                "participle": { "present": "groaning", "past": "groaned" },
+                "simple": { "singular": "groans", "plural": "groan", "past": "groaned" }
+            },
+            {
+                "participle": { "present": "laughing", "past": "laughed" },
+                "simple": { "singular": "laughs", "plural": "laugh", "past": "laughed" }
+            },
+            {
+                "participle": { "present": "learning", "past": "learned" },
+                "simple": { "singular": "learns", "plural": "learn", "past": "learned" }
+            },
+            {
+                "participle": { "present": "mourning", "past": "mourned" },
+                "simple": { "singular": "mourns", "plural": "mourn", "past": "mourned" }
+            },
+            {
+                "participle": { "present": "nodding", "past": "nodded" },
+                "simple": { "singular": "nods", "plural": "nod", "past": "nodded" }
+            },
+            {
+                "participle": { "present": "smiling", "past": "smiled" },
+                "simple": { "singular": "smiles", "plural": "smile", "past": "smiled" }
+            },
+            {
+                "participle": { "present": "snooping", "past": "snooped" },
+                "simple": { "singular": "snoops", "plural": "snoop", "past": "snooped" }
+            },
+            {
+                "participle": { "present": "surrender", "past": "surrendered" },
+                "simple": { "singular": "surrender", "plural": "surrender", "past": "surrendered" }
+            },
+            {
+                "participle": { "present": "wriggling", "past": "wrigled" },
+                "simple": { "singular": "wrigles", "plural": "wrigle", "past": "wrigled" }
+            },
+            {
+                "participle": { "present": "yelling", "past": "yelled" },
+                "simple": { "singular": "yells", "plural": "yell", "past": "yelled" }
             }
         ]
+    },
+    "special_verbs": {
+        "linking": {
+            "future":  { "singular": "will be", "plural": "will be" },
+            "present": { "singular": "is",      "plural": "are" },
+            "past":    { "singular": "was",     "plural": "were" }
+        },
+        "possessive": {
+            "future":  { "singular": "will have", "plural": "will have" },
+            "present": { "singular": "has",       "plural": "have" },
+            "past":    { "singular": "had",       "plural": "had" }
+        },
+        "declarative": {
+            "future":  { "singular": "will", "plural": "will" },
+            "present": { "singular": "does", "plural": "do" },
+            "past":    { "singular": "did",  "plural": "did" }
+        }
     },
     "articles": [
         {
