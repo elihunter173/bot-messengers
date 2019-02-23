@@ -7,6 +7,8 @@ JSON dictionary along with a few helper functions.
 
 TODO:
     * Describe the JSON dictionary structure in the module docstring.
+    * Create a Dictionary class to simplify access.
+    * Create numbers, tenses, special verb type enums.
 
 Authors:
     Eli W. Hunter
@@ -21,6 +23,22 @@ import json
 VOWELS = ('a', 'e', 'i', 'o', 'u')
 NUMBERS = ('singular', 'plural')
 TENSES = ('future', 'present', 'past')
+WEIGHTED_TENSES = ('future', 'present', 'present', 'present', 'past', 'past')
+
+
+def capitalize(string):
+    """Capitalize the first letter of the string, ignoring others.
+
+    This exists to prevent .capitalize() from lowercasing characters that
+    should be capitalized.
+
+    Args:
+        string (str): The string to be capitalized.
+
+    Args:
+        str: The capitalized string.
+    """
+    return "%s%s" % (string[0].upper(), string[1:])
 
 
 def _get_noun(dictionary, number):
@@ -87,16 +105,82 @@ def _get_article(dictionary, number, suffix_type):
     return article
 
 
+def _get_special_verb(dictionary, number, tense, verb_type):
+    """Get a special verb from a dictionary with special verbs.
+
+    Args:
+        dictionary (dict): A dictionary of words, containing special verbs.
+        number (str): The grammatical number of a word as a string.
+        tense (str): The grammatical tense of a verb as a string.
+    """
+    verb = dictionary['special_verbs'][verb_type][tense][number]
+    return verb
+
+
 def _get_verb(dictionary, number, tense, transitivity):
-    """Get a random verb from a dictionary with artciles.
+    """Get a random verb from a dictionary with verbs.
+
+    Each verb has multiple different forms that are weighted based on how much
+    they "naturally" occur in speech. This weighting is opinionated.
 
     Args:
         dictionary (dict): A dictionary of words, containing verbs.
         number (str): The grammatical number of a word as a string.
         tense (str): The grammatical tense of a verb as a string.
     """
-    verb = random.choice(dictionary['verbs'][transitivity])[number][tense]
-    return verb
+    verb = random.choice(dictionary['verbs'][transitivity])
+
+    # To weight a verb form in the list, it is added more times. That is, it is
+    # added more times if it is "common" and fewer times if it is "uncommon"
+    forms = list()
+
+    # Participle form: is/was/will be + participle
+    participle_form = \
+        _combine_strings(_get_special_verb(dictionary, number, tense, 'linking'),
+                         verb['participle']['present'])
+    forms += 3 * [participle_form]
+    # Declarative form: do/does/did + simple singular present
+    declarative_form = \
+        _combine_strings(_get_special_verb(dictionary, number, tense, 'declarative'),
+                         verb['simple']['plural'])
+    forms += 2 * [declarative_form]
+
+    if tense == 'present':
+        # Simple present: simple_present
+        simple_present = verb['simple'][number]
+        forms += 3 * [simple_present]
+
+    elif tense == 'future':
+        # Simple future: will + simple present
+        will_form = _combine_strings('will', verb['simple']['plural'])
+        forms += 3 * [will_form]
+        # Simple future: shall + simple present
+        shall_form = _combine_strings('shall', verb['simple']['plural'])
+        forms += 1 * [shall_form]
+
+    elif tense == 'past':
+        # Simple past: simple past
+        simple_past = verb['simple']['past']
+        forms += 3 * [simple_past]
+        # Future perfect: will have + simple present verb
+        future_perfect = \
+            _combine_strings(_get_special_verb(dictionary, number, 'future', 'possessive'),
+                             verb['simple']['past'])
+        forms += 1 * [future_perfect]
+        # Present perfect: has/have + simple present verb
+        present_perfect = \
+            _combine_strings(_get_special_verb(dictionary, number, 'present', 'possessive'),
+                             verb['simple']['past'])
+        forms += 3 * [present_perfect]
+        # Pluperfect: had + simple present verb
+        pluperfect = \
+            _combine_strings(_get_special_verb(dictionary, number, 'past', 'possessive'),
+                             verb['simple']['past'])
+        forms += 2 * [pluperfect]
+
+    chosen_form = random.choice(forms)
+
+    return chosen_form
 
 
 def _get_full_noun(dictionary, number, number_of_adjectives):
@@ -118,7 +202,7 @@ def _get_full_noun(dictionary, number, number_of_adjectives):
     # Temporary word to figure out the correct article
     word = _combine_strings(adjectives, noun)
     suffix_type = ''
-    if word[0] in VOWELS:
+    if word[0].lower() in VOWELS:
         suffix_type = 'vowel'
     else:
         suffix_type = 'normal'
@@ -206,7 +290,7 @@ def simple_sentence(dictionary_filepath, max_adjectives=2):
                                  subject_number_of_adjectives)
 
         transitivity = random.choice(['transitive', 'intransitive'])
-        tense = random.choice(TENSES)
+        tense = random.choice(WEIGHTED_TENSES)
         verb = _get_verb(dictionary, subject_number, tense, transitivity)
 
         complement = ''
@@ -221,7 +305,7 @@ def simple_sentence(dictionary_filepath, max_adjectives=2):
 
         del(dictionary)
 
-        yield sentence.capitalize()
+        yield capitalize(sentence)
 
 
 if __name__ == '__main__':
@@ -234,6 +318,8 @@ if __name__ == '__main__':
                         help='path to the JSON dictionary')
     parser.add_argument('-n', '--number', default=1, type=int,
                         help='number of random strings to generate (default: 1)')
+    parser.add_argument('-p', '--perpetual', action='store_true',
+                        help='whether to create words perpetually')
     parser.add_argument('-w', '--word', action='append_const',
                         dest='generators', const=word,
                         help='add a word generator to the list of the possible generators')
@@ -267,5 +353,9 @@ if __name__ == '__main__':
         generators[i] = generators[i](dictionary_filepath)
 
     # Output Text
-    for _ in range(number_to_generate):
-        print(next(random.choice(generators)))
+    if args.perpetual:
+        while True:
+            print(next(random.choice(generators)))
+    else:
+        for _ in range(number_to_generate):
+            print(next(random.choice(generators)))
