@@ -20,4 +20,4 @@ source ${parent_path}/virtualenv/bin/activate
 
 # Run the program
 ${text_gen_path}/text_generator.py -s ${text_gen_path}/data/silly_dictionary.json \
-    | ${parent_path}/tweeter.py
+    | ${parent_path}/tweeter_bot.py
