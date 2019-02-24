@@ -188,8 +188,8 @@
                 "simple": { "singular": "surrender", "plural": "surrender", "past": "surrendered" }
             },
             {
-                "participle": { "present": "wriggling", "past": "wrigled" },
-                "simple": { "singular": "wrigles", "plural": "wrigle", "past": "wrigled" }
+                "participle": { "present": "wriggling", "past": "wriggled" },
+                "simple": { "singular": "wriggles", "plural": "wriggle", "past": "wriggled" }
             },
             {
                 "participle": { "present": "yelling", "past": "yelled" },
