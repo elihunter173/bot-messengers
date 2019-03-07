@@ -1,52 +1,39 @@
 {
     "nouns": [
-        { "singular": "American"           , "plural": "Americans" },
-        { "singular": "bird"               , "plural": "birds" },
-        { "singular": "birb"               , "plural": "birbs" },
-        { "singular": "bonglebatch"        , "plural": "bonglebatches" },
-        { "singular": "brethren"           , "plural": "brethren" },
-        { "singular": "chauvinist"         , "plural": "chauvinists" },
-        { "singular": "Constitution"       , "plural": "Constitutions" },
-        { "singular": "chonk"              , "plural": "chonks" },
-        { "singular": "chungus"            , "plural": "chunguses" },
-        { "singular": "drug"               , "plural": "drugs" },
-        { "singular": "Englishman"         , "plural": "Englishmen" },
-        { "singular": "failure"            , "plural": "failures" },
-        { "singular": "Frenchman"          , "plural": "Frenchmen" },
-        { "singular": "failure"            , "plural": "failures" },
-        { "singular": "folkman"            , "plural": "folks" },
-        { "singular": "floop"              , "plural": "floops" },
-        { "singular": "Geneva Convention"  , "plural": "Geneva Conventions" },
-        { "singular": "German"             , "plural": "Germans" },
-        { "singular": "grandma"            , "plural": "grandmas" },
-        { "singular": "grandpa"            , "plural": "grandpas" },
-        { "singular": "karate master"      , "plural": "karate masters" },
-        { "singular": "kitty"              , "plural": "kitties" },
-        { "singular": "legend"             , "plural": "legends" },
-        { "singular": "man"                , "plural": "men" },
-        { "singular": "place of buisiness" , "plural": "place of buisiness" },
-        { "singular": "puppy"              , "plural": "puppies" },
-        { "singular": "psychic"            , "plural": "psychics" },
-        { "singular": "trap"               , "plural": "traps" },
-        { "singular": "woman"              , "plural": "women" }
+        { "singular": "American"          , "plural": "Americans" },
+        { "singular": "blunderbuss"       , "plural": "blunderbusses" },
+        { "singular": "brethren"          , "plural": "brethren" },
+        { "singular": "chungus"           , "plural": "chunguses" },
+        { "singular": "drug"              , "plural": "drugs" },
+        { "singular": "Englishman"        , "plural": "Englishmen" },
+        { "singular": "Frenchman"         , "plural": "Frenchmen" },
+        { "singular": "folk"              , "plural": "folks" },
+        { "singular": "Geneva Convention" , "plural": "Geneva Conventions" },
+        { "singular": "German"            , "plural": "Germans" },
+        { "singular": "grandma"           , "plural": "grandmas" },
+        { "singular": "grandpa"           , "plural": "grandpas" },
+        { "singular": "karate master"     , "plural": "karate masters" },
+        { "singular": "kitty"             , "plural": "kitties" },
+        { "singular": "legend"            , "plural": "legends" },
+        { "singular": "man"               , "plural": "men" },
+        { "singular": "place of business" , "plural": "places of business" },
+        { "singular": "puppy"             , "plural": "puppies" },
+        { "singular": "psychic"           , "plural": "psychics" },
+        { "singular": "trap"              , "plural": "traps" },
+        { "singular": "woman"             , "plural": "women" }
     ],
     "adjectives": [
         "American",
         "Amish",
         "beautiful",
         "burly",
-        "confrontational",
-        "chauvinistic",
-        "domesticated",
         "embarrassed",
         "English",
         "French",
+        "fat",
         "frisky",
         "German",
         "legendary",
-        "mean",
-        "nice",
-        "non-confrontational",
         "psychic",
         "rich",
         "sheepish",
@@ -72,10 +59,6 @@
             {
                 "participle": { "present": "buttering up", "past": "buttered up" },
                 "simple": { "singular": "butters up", "plural": "butter up", "past": "buttered up" }
-            },
-            {
-                "participle": { "present": "cajoling", "past": "cajoled" },
-                "simple": { "singular": "cajoles", "plural": "cajole", "past": "cajoled" }
             },
             {
                 "participle": { "present": "enjoying", "past": "enjoyed" },
@@ -148,8 +131,8 @@
                 "simple": { "singular": "echoes", "plural": "echo", "past": "echoed" }
             },
             {
-                "participle": { "present": "diceiving", "past": "diceived" },
-                "simple": { "singular": "diceives", "plural": "deceive", "past": "diceived" }
+                "participle": { "present": "deceiving", "past": "deceived" },
+                "simple": { "singular": "deceives", "plural": "deceive", "past": "deceived" }
             },
             {
                 "participle": { "present": "gesticulating", "past": "gesticulated" },
@@ -172,20 +155,12 @@
                 "simple": { "singular": "mourns", "plural": "mourn", "past": "mourned" }
             },
             {
-                "participle": { "present": "nodding", "past": "nodded" },
-                "simple": { "singular": "nods", "plural": "nod", "past": "nodded" }
-            },
-            {
                 "participle": { "present": "smiling", "past": "smiled" },
                 "simple": { "singular": "smiles", "plural": "smile", "past": "smiled" }
             },
             {
-                "participle": { "present": "snooping", "past": "snooped" },
-                "simple": { "singular": "snoops", "plural": "snoop", "past": "snooped" }
-            },
-            {
-                "participle": { "present": "surrender", "past": "surrendered" },
-                "simple": { "singular": "surrender", "plural": "surrender", "past": "surrendered" }
+                "participle": { "present": "surrendering", "past": "surrendered" },
+                "simple": { "singular": "surrenders", "plural": "surrender", "past": "surrendered" }
             },
             {
                 "participle": { "present": "wriggling", "past": "wriggled" },
