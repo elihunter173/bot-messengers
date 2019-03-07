@@ -11,13 +11,12 @@
 #   * Eli W. Hunter
 
 # Set up common variables
-script_path=$(readlink -f $0)
-parent_path=${script_path%/*}
-text_gen_path="${HOME}/src/github/text-generator"
+DIRPATH=$(dirname $(readlink -f $0))
+text_gen_path="../text-generator"
 
 # Load the virtualenv
-source ${parent_path}/virtualenv/bin/activate
+source ${DIRPATH}/virtualenv/bin/activate
 
 # Run the program
 ${text_gen_path}/text_generator.py -s ${text_gen_path}/data/silly_dictionary.json \
-    | ${parent_path}/tweeter_bot.py
+    | ${DIRPATH}/tweeter_bot.py
