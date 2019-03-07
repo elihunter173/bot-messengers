@@ -15,6 +15,9 @@ messages with random or meaningful content.
 The specific setup required depends on the bot you want to use. However, generally the setup
 consists of setting up the secrets for your desired platform and then running the bot.
 
+Additionally, you must install the requirements listed in `requirements.txt` in a python virtualenv
+named `virtualenv` at the top level of this project.
+
 ### TweeterBot
 
 1. Copy `twitter_secrets_example.py` to `twitter_secrets.py`
