@@ -120,6 +120,3 @@ dmypy.json
 
 # Ignore secrets
 twitter_secrets.py
-
-# C Tags file
-/tags
