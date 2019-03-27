@@ -7,7 +7,7 @@
         { "singular": "drug"              , "plural": "drugs" },
         { "singular": "Englishman"        , "plural": "Englishmen" },
         { "singular": "Frenchman"         , "plural": "Frenchmen" },
-        { "singular": "folk"              , "plural": "folks" },
+        { "singular": "folkman"           , "plural": "folks" },
         { "singular": "Geneva Convention" , "plural": "Geneva Conventions" },
         { "singular": "German"            , "plural": "Germans" },
         { "singular": "grandma"           , "plural": "grandmas" },
