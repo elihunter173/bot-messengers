@@ -6,14 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-certifi = "*"
-chardet = "*"
-idna = "*"
-oauthlib = "*"
-requests = "*"
-requests-oauthlib = "*"
-urllib3 = "*"
-TwitterAPI = "*"
+twitterapi = "*"
 
 [requires]
 python_version = "3.7"
