@@ -19,7 +19,6 @@
         { "singular": "place of business" , "plural": "places of business" },
         { "singular": "puppy"             , "plural": "puppies" },
         { "singular": "psychic"           , "plural": "psychics" },
-        { "singular": "trap"              , "plural": "traps" },
         { "singular": "woman"             , "plural": "women" }
     ],
     "adjectives": [
